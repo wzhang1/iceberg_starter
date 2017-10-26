@@ -5,7 +5,7 @@ from scipy import misc
 import argparse
 import os, errno
 
-def json_to_png(input_json, output, label_file_name, is_test):
+def json_to_jpg(input_json, output, label_file_name, is_test):
     input_data=pd.read_json(input_json)
     label_file = open(label_file_name, 'w')
 
@@ -45,5 +45,5 @@ if __name__ == "__main__":
             raise
     is_test =  (args.is_test == 'True')
 
-    json_to_png(args.json_input, args.output, args.label_file, is_test)
+    json_to_jpg(args.json_input, args.output, args.label_file, is_test)
 
