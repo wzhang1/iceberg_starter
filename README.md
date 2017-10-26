@@ -25,7 +25,7 @@ Predict script need to be modified to have the stored params from traning
 
 ## To do
 
-1, It seem that some prediction is 0 or 1 and make the final submission bad,
+1, It seem that some prediction is 0 or 1 which make leadbboard score bad,
 need to find a better way to cap the predicted values. Using this script as is
 can only get 0.61 in public lb. A larger resolution is used which may be a bad idea.
 Data generation is navie, may affect result.
