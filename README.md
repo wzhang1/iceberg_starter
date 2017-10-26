@@ -1,5 +1,6 @@
 # iceberg_starter
 mxnet starter for https://www.kaggle.com/c/statoil-iceberg-classifier-challenge
+modified from https://github.com/zackchase/mxnet-the-straight-dope
 
 ### Data preparation
 
