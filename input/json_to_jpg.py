@@ -43,6 +43,7 @@ if __name__ == "__main__":
     except OSError as e:
         if e.errno != errno.EEXIST:
             raise
+    is_test =  (args.is_test == 'True')
 
-    json_to_png(args.json_input, args.output, args.label_file, args.is_test)
+    json_to_png(args.json_input, args.output, args.label_file, is_test)
 
