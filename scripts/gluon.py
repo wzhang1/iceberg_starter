@@ -74,8 +74,8 @@ def evaluate(net, data_iter, ctx):
     data_iter.reset()
     for batch in data_iter:
         data = color_normalize(batch.data[0]/255,
-                               mean=mx.nd.array([0.485, 0.456, 0.406]).reshape((1,3,1,1)),
-                               std=mx.nd.array([0.229, 0.224, 0.225]).reshape((1,3,1,1)))
+                               mean=mx.nd.array([0, 0, 0]).reshape((1,3,1,1)),
+                               std=mx.nd.array([0.5, 0.5, 2]).reshape((1,3,1,1)))
         data = gluon.utils.split_and_load(data, ctx_list=ctx, batch_axis=0)
         label = gluon.utils.split_and_load(batch.label[0], ctx_list=ctx, batch_axis=0)
         outputs = []
@@ -107,8 +107,8 @@ def train(net, train_iter, val_iter, epochs, ctx):
         for i, batch in enumerate(train_iter):
             # the model zoo models expect normalized images
             data = color_normalize(batch.data[0]/255,
-                                   mean=mx.nd.array([0.485, 0.456, 0.406]).reshape((1,3,1,1)),
-                                   std=mx.nd.array([0.229, 0.224, 0.225]).reshape((1,3,1,1)))
+                                   mean=mx.nd.array([0, 0, 0]).reshape((1,3,1,1)),
+                                   std=mx.nd.array([0.5, 0.5, 2]).reshape((1,3,1,1)))
             data = gluon.utils.split_and_load(data, ctx_list=ctx, batch_axis=0)
             label = gluon.utils.split_and_load(batch.label[0], ctx_list=ctx, batch_axis=0)
             outputs = []
