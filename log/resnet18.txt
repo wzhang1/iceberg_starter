@@ -1,0 +1,751 @@
+python gluon.py 
+[23:49:27] src/io/iter_image_recordio_2.cc:153: ImageRecordIOParser2: ../input/train_split.rec, use 4 threads for decoding..
+[23:49:27] src/io/iter_image_recordio_2.cc:153: ImageRecordIOParser2: ../input/val.rec, use 4 threads for decoding..
+(['accuracy', 'loss'], [0.5494791666666666, -0.31029309829076129])
+INFO:root:[Initial] validation: accuracy=0.549479, loss=-0.310293
+INFO:root:[Epoch 0 Batch 0] speed: 18.610437 samples/s, training: accuracy=0.578125, loss=0.679503
+INFO:root:[Epoch 0 Batch 1] speed: 16.425420 samples/s, training: accuracy=0.492188, loss=1.170044
+INFO:root:[Epoch 0 Batch 2] speed: 16.924111 samples/s, training: accuracy=0.492188, loss=0.953315
+INFO:root:[Epoch 0 Batch 3] speed: 16.953404 samples/s, training: accuracy=0.478516, loss=0.756799
+INFO:root:[Epoch 0 Batch 4] speed: 16.922348 samples/s, training: accuracy=0.484375, loss=0.622954
+INFO:root:[Epoch 0 Batch 5] speed: 17.260523 samples/s, training: accuracy=0.484375, loss=0.524643
+INFO:root:[Epoch 0 Batch 6] speed: 17.009025 samples/s, training: accuracy=0.493304, loss=0.453537
+INFO:root:[Epoch 0 Batch 7] speed: 17.065197 samples/s, training: accuracy=0.488281, loss=0.398620
+INFO:root:[Epoch 0 Batch 8] speed: 17.141236 samples/s, training: accuracy=0.486111, loss=0.354631
+INFO:root:[Epoch 0 Batch 9] speed: 17.042913 samples/s, training: accuracy=0.489844, loss=0.318417
+INFO:root:[Epoch 0] training: accuracy=0.489844, loss=0.318417
+INFO:root:[Epoch 0] time cost: 75.127775
+(['accuracy', 'loss'], [0.58203125, -436518.5])
+INFO:root:[Epoch 0] validation: accuracy=0.582031, loss=-436518.500000
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 1 Batch 0] speed: 13.591078 samples/s, training: accuracy=0.492188, loss=-0.018801
+INFO:root:[Epoch 1 Batch 1] speed: 17.142519 samples/s, training: accuracy=0.511719, loss=-0.015823
+INFO:root:[Epoch 1 Batch 2] speed: 17.410804 samples/s, training: accuracy=0.523438, loss=-0.015116
+INFO:root:[Epoch 1 Batch 3] speed: 12.745839 samples/s, training: accuracy=0.517578, loss=-0.016649
+INFO:root:[Epoch 1 Batch 4] speed: 17.200461 samples/s, training: accuracy=0.503125, loss=-0.020250
+^[[AINFO:root:[Epoch 1 Batch 5] speed: 15.520959 samples/s, training: accuracy=0.503906, loss=-0.021398
+^CTraceback (most recent call last):
+  File "gluon.py", line 152, in <module>
+    train(ice_berg_net, train_iter, val_iter, epochs, contexts)
+  File "gluon.py", line 107, in train
+    for i, batch in enumerate(train_iter):
+  File "/usr/local/lib/python2.7/dist-packages/mxnet/io.py", line 808, in next
+    check_call(_LIB.MXDataIterNext(self.handle, ctypes.byref(next_res)))
+KeyboardInterrupt
+w@bigcuda:~/Downloads/iceberg/scripts$ python gluon.py 
+[23:52:06] src/io/iter_image_recordio_2.cc:153: ImageRecordIOParser2: ../input/train_split.rec, use 4 threads for decoding..
+[23:52:06] src/io/iter_image_recordio_2.cc:153: ImageRecordIOParser2: ../input/val.rec, use 4 threads for decoding..
+(['accuracy', 'loss'], [0.5494791666666666, -0.31029309829076129])
+INFO:root:[Initial] validation: accuracy=0.549479, loss=-0.310293
+INFO:root:[Epoch 0 Batch 0] speed: 19.220885 samples/s, training: accuracy=0.578125, loss=0.679503
+INFO:root:[Epoch 0 Batch 1] speed: 17.607024 samples/s, training: accuracy=0.582031, loss=0.771481
+INFO:root:[Epoch 0 Batch 2] speed: 17.525959 samples/s, training: accuracy=0.557292, loss=0.755903
+INFO:root:[Epoch 0 Batch 3] speed: 17.514472 samples/s, training: accuracy=0.570312, loss=0.725964
+INFO:root:[Epoch 0 Batch 4] speed: 17.536776 samples/s, training: accuracy=0.551562, loss=0.704821
+INFO:root:[Epoch 0 Batch 5] speed: 17.508122 samples/s, training: accuracy=0.557292, loss=0.678235
+INFO:root:[Epoch 0 Batch 6] speed: 17.179790 samples/s, training: accuracy=0.566964, loss=0.658339
+INFO:root:[Epoch 0 Batch 7] speed: 17.178031 samples/s, training: accuracy=0.574219, loss=0.641381
+INFO:root:[Epoch 0 Batch 8] speed: 16.967400 samples/s, training: accuracy=0.579861, loss=0.623552
+INFO:root:[Epoch 0 Batch 9] speed: 17.121363 samples/s, training: accuracy=0.580469, loss=0.607589
+INFO:root:[Epoch 0] training: accuracy=0.580469, loss=0.607589
+INFO:root:[Epoch 0] time cost: 73.447363
+(['accuracy', 'loss'], [0.4921875, 0.32927694916725159])
+INFO:root:[Epoch 0] validation: accuracy=0.492188, loss=0.329277
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 1 Batch 0] speed: 19.459899 samples/s, training: accuracy=0.601562, loss=0.420883
+INFO:root:[Epoch 1 Batch 1] speed: 16.960629 samples/s, training: accuracy=0.605469, loss=0.397074
+INFO:root:[Epoch 1 Batch 2] speed: 17.558162 samples/s, training: accuracy=0.614583, loss=0.393498
+INFO:root:[Epoch 1 Batch 3] speed: 17.036617 samples/s, training: accuracy=0.623047, loss=0.389547
+INFO:root:[Epoch 1 Batch 4] speed: 17.528479 samples/s, training: accuracy=0.628125, loss=0.382732
+INFO:root:[Epoch 1 Batch 5] speed: 17.473005 samples/s, training: accuracy=0.634115, loss=0.377164
+INFO:root:[Epoch 1 Batch 6] speed: 17.188775 samples/s, training: accuracy=0.638393, loss=0.377787
+INFO:root:[Epoch 1 Batch 7] speed: 17.070844 samples/s, training: accuracy=0.639648, loss=0.373463
+INFO:root:[Epoch 1 Batch 8] speed: 17.313956 samples/s, training: accuracy=0.642361, loss=0.369173
+INFO:root:[Epoch 1 Batch 9] speed: 17.638057 samples/s, training: accuracy=0.646094, loss=0.363979
+INFO:root:[Epoch 1] training: accuracy=0.646094, loss=0.363979
+INFO:root:[Epoch 1] time cost: 73.524450
+(['accuracy', 'loss'], [0.5494791666666666, 0.21573048830032349])
+INFO:root:[Epoch 1] validation: accuracy=0.549479, loss=0.215730
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 2 Batch 0] speed: 18.722513 samples/s, training: accuracy=0.695312, loss=0.323562
+INFO:root:[Epoch 2 Batch 1] speed: 17.144689 samples/s, training: accuracy=0.660156, loss=0.305865
+INFO:root:[Epoch 2 Batch 2] speed: 17.366977 samples/s, training: accuracy=0.638021, loss=0.293783
+INFO:root:[Epoch 2 Batch 3] speed: 17.287436 samples/s, training: accuracy=0.634766, loss=0.294696
+INFO:root:[Epoch 2 Batch 4] speed: 17.577287 samples/s, training: accuracy=0.639062, loss=0.293463
+INFO:root:[Epoch 2 Batch 5] speed: 17.423104 samples/s, training: accuracy=0.643229, loss=0.294913
+INFO:root:[Epoch 2 Batch 6] speed: 17.384766 samples/s, training: accuracy=0.635045, loss=0.290148
+INFO:root:[Epoch 2 Batch 7] speed: 17.412236 samples/s, training: accuracy=0.630859, loss=0.285293
+INFO:root:[Epoch 2 Batch 8] speed: 17.401785 samples/s, training: accuracy=0.638021, loss=0.280038
+INFO:root:[Epoch 2 Batch 9] speed: 17.393855 samples/s, training: accuracy=0.635156, loss=0.275126
+INFO:root:[Epoch 2] training: accuracy=0.635156, loss=0.275126
+INFO:root:[Epoch 2] time cost: 73.508150
+(['accuracy', 'loss'], [0.6536458333333334, 0.15624930709600449])
+INFO:root:[Epoch 2] validation: accuracy=0.653646, loss=0.156249
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 3 Batch 0] speed: 19.098480 samples/s, training: accuracy=0.656250, loss=0.226464
+INFO:root:[Epoch 3 Batch 1] speed: 17.312567 samples/s, training: accuracy=0.679688, loss=0.235759
+INFO:root:[Epoch 3 Batch 2] speed: 17.258647 samples/s, training: accuracy=0.687500, loss=0.236672
+INFO:root:[Epoch 3 Batch 3] speed: 17.434281 samples/s, training: accuracy=0.697266, loss=0.235063
+INFO:root:[Epoch 3 Batch 4] speed: 17.129782 samples/s, training: accuracy=0.690625, loss=0.234819
+INFO:root:[Epoch 3 Batch 5] speed: 17.406620 samples/s, training: accuracy=0.692708, loss=0.237074
+INFO:root:[Epoch 3 Batch 6] speed: 17.191260 samples/s, training: accuracy=0.688616, loss=0.236747
+INFO:root:[Epoch 3 Batch 7] speed: 17.377226 samples/s, training: accuracy=0.690430, loss=0.237606
+INFO:root:[Epoch 3 Batch 8] speed: 17.074591 samples/s, training: accuracy=0.690104, loss=0.236649
+INFO:root:[Epoch 3 Batch 9] speed: 17.432266 samples/s, training: accuracy=0.682813, loss=0.239063
+INFO:root:[Epoch 3] training: accuracy=0.682813, loss=0.239063
+INFO:root:[Epoch 3] time cost: 73.705830
+(['accuracy', 'loss'], [0.6875, 0.10657435655593872])
+INFO:root:[Epoch 3] validation: accuracy=0.687500, loss=0.106574
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 4 Batch 0] speed: 19.118477 samples/s, training: accuracy=0.726562, loss=0.238907
+INFO:root:[Epoch 4 Batch 1] speed: 17.390876 samples/s, training: accuracy=0.691406, loss=0.226903
+INFO:root:[Epoch 4 Batch 2] speed: 17.377563 samples/s, training: accuracy=0.687500, loss=0.225014
+INFO:root:[Epoch 4 Batch 3] speed: 16.988754 samples/s, training: accuracy=0.675781, loss=0.222607
+INFO:root:[Epoch 4 Batch 4] speed: 17.456860 samples/s, training: accuracy=0.664062, loss=0.220069
+INFO:root:[Epoch 4 Batch 5] speed: 17.390269 samples/s, training: accuracy=0.671875, loss=0.221597
+INFO:root:[Epoch 4 Batch 6] speed: 17.082271 samples/s, training: accuracy=0.669643, loss=0.227000
+INFO:root:[Epoch 4 Batch 7] speed: 17.392325 samples/s, training: accuracy=0.666016, loss=0.225776
+INFO:root:[Epoch 4 Batch 8] speed: 17.228186 samples/s, training: accuracy=0.673611, loss=0.227131
+INFO:root:[Epoch 4 Batch 9] speed: 16.977931 samples/s, training: accuracy=0.679688, loss=0.230994
+INFO:root:[Epoch 4] training: accuracy=0.679688, loss=0.230994
+INFO:root:[Epoch 4] time cost: 73.845322
+(['accuracy', 'loss'], [0.7109375, 0.19393825034300485])
+INFO:root:[Epoch 4] validation: accuracy=0.710938, loss=0.193938
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 5 Batch 0] speed: 19.229149 samples/s, training: accuracy=0.695312, loss=0.269885
+INFO:root:[Epoch 5 Batch 1] speed: 17.302296 samples/s, training: accuracy=0.679688, loss=0.266007
+INFO:root:[Epoch 5 Batch 2] speed: 17.286412 samples/s, training: accuracy=0.695312, loss=0.265074
+INFO:root:[Epoch 5 Batch 3] speed: 17.382507 samples/s, training: accuracy=0.697266, loss=0.259367
+INFO:root:[Epoch 5 Batch 4] speed: 17.127336 samples/s, training: accuracy=0.707812, loss=0.253589
+INFO:root:[Epoch 5 Batch 5] speed: 17.450211 samples/s, training: accuracy=0.712240, loss=0.255503
+INFO:root:[Epoch 5 Batch 6] speed: 17.478912 samples/s, training: accuracy=0.702009, loss=0.256603
+INFO:root:[Epoch 5 Batch 7] speed: 17.459755 samples/s, training: accuracy=0.703125, loss=0.253980
+INFO:root:[Epoch 5 Batch 8] speed: 17.482030 samples/s, training: accuracy=0.701389, loss=0.249481
+INFO:root:[Epoch 5 Batch 9] speed: 17.327942 samples/s, training: accuracy=0.701562, loss=0.246518
+INFO:root:[Epoch 5] training: accuracy=0.701562, loss=0.246518
+INFO:root:[Epoch 5] time cost: 73.366082
+(['accuracy', 'loss'], [0.65625, 0.27855426073074341])
+INFO:root:[Epoch 5] validation: accuracy=0.656250, loss=0.278554
+INFO:root:[Epoch 6 Batch 0] speed: 19.325332 samples/s, training: accuracy=0.617188, loss=0.197534
+INFO:root:[Epoch 6 Batch 1] speed: 17.272578 samples/s, training: accuracy=0.683594, loss=0.223298
+INFO:root:[Epoch 6 Batch 2] speed: 16.983141 samples/s, training: accuracy=0.687500, loss=0.226901
+INFO:root:[Epoch 6 Batch 3] speed: 17.438467 samples/s, training: accuracy=0.701172, loss=0.232515
+INFO:root:[Epoch 6 Batch 4] speed: 17.163556 samples/s, training: accuracy=0.698438, loss=0.238541
+INFO:root:[Epoch 6 Batch 5] speed: 17.369107 samples/s, training: accuracy=0.686198, loss=0.244283
+INFO:root:[Epoch 6 Batch 6] speed: 17.326053 samples/s, training: accuracy=0.698661, loss=0.251457
+INFO:root:[Epoch 6 Batch 7] speed: 17.409525 samples/s, training: accuracy=0.698242, loss=0.256413
+INFO:root:[Epoch 6 Batch 8] speed: 17.230388 samples/s, training: accuracy=0.701389, loss=0.264552
+INFO:root:[Epoch 6 Batch 9] speed: 17.070736 samples/s, training: accuracy=0.703906, loss=0.268470
+INFO:root:[Epoch 6] training: accuracy=0.703906, loss=0.268470
+INFO:root:[Epoch 6] time cost: 73.782241
+(['accuracy', 'loss'], [0.7239583333333334, 0.30948306123415631])
+INFO:root:[Epoch 6] validation: accuracy=0.723958, loss=0.309483
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 7 Batch 0] speed: 19.455942 samples/s, training: accuracy=0.656250, loss=0.295398
+INFO:root:[Epoch 7 Batch 1] speed: 17.541367 samples/s, training: accuracy=0.675781, loss=0.281721
+INFO:root:[Epoch 7 Batch 2] speed: 17.030750 samples/s, training: accuracy=0.710938, loss=0.271893
+INFO:root:[Epoch 7 Batch 3] speed: 17.450503 samples/s, training: accuracy=0.732422, loss=0.272045
+INFO:root:[Epoch 7 Batch 4] speed: 17.625586 samples/s, training: accuracy=0.726562, loss=0.275342
+INFO:root:[Epoch 7 Batch 5] speed: 17.598271 samples/s, training: accuracy=0.722656, loss=0.274788
+INFO:root:[Epoch 7 Batch 6] speed: 17.545807 samples/s, training: accuracy=0.718750, loss=0.277452
+INFO:root:[Epoch 7 Batch 7] speed: 17.625421 samples/s, training: accuracy=0.714844, loss=0.279577
+INFO:root:[Epoch 7 Batch 8] speed: 17.566518 samples/s, training: accuracy=0.714410, loss=0.280911
+INFO:root:[Epoch 7 Batch 9] speed: 17.420948 samples/s, training: accuracy=0.718750, loss=0.279963
+INFO:root:[Epoch 7] training: accuracy=0.718750, loss=0.279963
+INFO:root:[Epoch 7] time cost: 72.828670
+(['accuracy', 'loss'], [0.7395833333333334, 0.40921386082967121])
+INFO:root:[Epoch 7] validation: accuracy=0.739583, loss=0.409214
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 8 Batch 0] speed: 18.672978 samples/s, training: accuracy=0.703125, loss=0.264491
+INFO:root:[Epoch 8 Batch 1] speed: 17.172801 samples/s, training: accuracy=0.738281, loss=0.274742
+INFO:root:[Epoch 8 Batch 2] speed: 16.945932 samples/s, training: accuracy=0.713542, loss=0.275861
+INFO:root:[Epoch 8 Batch 3] speed: 16.920245 samples/s, training: accuracy=0.716797, loss=0.275857
+INFO:root:[Epoch 8 Batch 4] speed: 17.086097 samples/s, training: accuracy=0.732812, loss=0.270296
+INFO:root:[Epoch 8 Batch 5] speed: 17.306746 samples/s, training: accuracy=0.733073, loss=0.265366
+INFO:root:[Epoch 8 Batch 6] speed: 17.235824 samples/s, training: accuracy=0.743304, loss=0.263661
+INFO:root:[Epoch 8 Batch 7] speed: 17.144124 samples/s, training: accuracy=0.753906, loss=0.261084
+INFO:root:[Epoch 8 Batch 8] speed: 17.236140 samples/s, training: accuracy=0.756076, loss=0.260428
+INFO:root:[Epoch 8 Batch 9] speed: 16.907600 samples/s, training: accuracy=0.751563, loss=0.257845
+INFO:root:[Epoch 8] training: accuracy=0.751563, loss=0.257845
+INFO:root:[Epoch 8] time cost: 74.587397
+(['accuracy', 'loss'], [0.71484375, 0.39969323575496674])
+INFO:root:[Epoch 8] validation: accuracy=0.714844, loss=0.399693
+INFO:root:[Epoch 9 Batch 0] speed: 18.877403 samples/s, training: accuracy=0.750000, loss=0.239700
+INFO:root:[Epoch 9 Batch 1] speed: 17.308740 samples/s, training: accuracy=0.789062, loss=0.238514
+INFO:root:[Epoch 9 Batch 2] speed: 17.377836 samples/s, training: accuracy=0.789062, loss=0.238784
+INFO:root:[Epoch 9 Batch 3] speed: 17.228841 samples/s, training: accuracy=0.796875, loss=0.242293
+INFO:root:[Epoch 9 Batch 4] speed: 17.070345 samples/s, training: accuracy=0.795312, loss=0.241122
+INFO:root:[Epoch 9 Batch 5] speed: 17.103147 samples/s, training: accuracy=0.785156, loss=0.240783
+INFO:root:[Epoch 9 Batch 6] speed: 17.139895 samples/s, training: accuracy=0.780134, loss=0.242819
+INFO:root:[Epoch 9 Batch 7] speed: 16.936067 samples/s, training: accuracy=0.778320, loss=0.247845
+INFO:root:[Epoch 9 Batch 8] speed: 17.080390 samples/s, training: accuracy=0.777778, loss=0.252479
+INFO:root:[Epoch 9 Batch 9] speed: 17.202625 samples/s, training: accuracy=0.782031, loss=0.254884
+INFO:root:[Epoch 9] training: accuracy=0.782031, loss=0.254884
+INFO:root:[Epoch 9] time cost: 74.298169
+(['accuracy', 'loss'], [0.7916666666666666, 0.35264374812444049])
+INFO:root:[Epoch 9] validation: accuracy=0.791667, loss=0.352644
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 10 Batch 0] speed: 18.920902 samples/s, training: accuracy=0.804688, loss=0.285623
+INFO:root:[Epoch 10 Batch 1] speed: 17.236615 samples/s, training: accuracy=0.808594, loss=0.280429
+INFO:root:[Epoch 10 Batch 2] speed: 17.308040 samples/s, training: accuracy=0.804688, loss=0.275298
+INFO:root:[Epoch 10 Batch 3] speed: 17.195952 samples/s, training: accuracy=0.810547, loss=0.274396
+INFO:root:[Epoch 10 Batch 4] speed: 17.188263 samples/s, training: accuracy=0.809375, loss=0.274165
+INFO:root:[Epoch 10 Batch 5] speed: 17.215579 samples/s, training: accuracy=0.815104, loss=0.275441
+INFO:root:[Epoch 10 Batch 6] speed: 17.067234 samples/s, training: accuracy=0.814732, loss=0.280495
+INFO:root:[Epoch 10 Batch 7] speed: 16.857372 samples/s, training: accuracy=0.809570, loss=0.285602
+INFO:root:[Epoch 10 Batch 8] speed: 17.046215 samples/s, training: accuracy=0.804688, loss=0.291309
+INFO:root:[Epoch 10 Batch 9] speed: 17.236594 samples/s, training: accuracy=0.806250, loss=0.293688
+INFO:root:[Epoch 10] training: accuracy=0.806250, loss=0.293688
+INFO:root:[Epoch 10] time cost: 74.324551
+(['accuracy', 'loss'], [0.73828125, 0.15137780643999577])
+INFO:root:[Epoch 10] validation: accuracy=0.738281, loss=0.151378
+INFO:root:[Epoch 11 Batch 0] speed: 19.238793 samples/s, training: accuracy=0.781250, loss=0.327203
+INFO:root:[Epoch 11 Batch 1] speed: 17.455122 samples/s, training: accuracy=0.796875, loss=0.320018
+INFO:root:[Epoch 11 Batch 2] speed: 17.468012 samples/s, training: accuracy=0.802083, loss=0.320583
+INFO:root:[Epoch 11 Batch 3] speed: 17.361658 samples/s, training: accuracy=0.802734, loss=0.319330
+INFO:root:[Epoch 11 Batch 4] speed: 17.120464 samples/s, training: accuracy=0.812500, loss=0.317213
+INFO:root:[Epoch 11 Batch 5] speed: 17.417172 samples/s, training: accuracy=0.808594, loss=0.311101
+INFO:root:[Epoch 11 Batch 6] speed: 17.272868 samples/s, training: accuracy=0.806920, loss=0.307712
+INFO:root:[Epoch 11 Batch 7] speed: 17.181259 samples/s, training: accuracy=0.809570, loss=0.305838
+INFO:root:[Epoch 11 Batch 8] speed: 17.320162 samples/s, training: accuracy=0.805556, loss=0.304424
+INFO:root:[Epoch 11] training: accuracy=0.805556, loss=0.304424
+INFO:root:[Epoch 11] time cost: 66.147358
+(['accuracy', 'loss'], [0.7057291666666666, 0.21812231838703156])
+INFO:root:[Epoch 11] validation: accuracy=0.705729, loss=0.218122
+INFO:root:[Epoch 12 Batch 0] speed: 19.276923 samples/s, training: accuracy=0.781250, loss=0.298531
+INFO:root:[Epoch 12 Batch 1] speed: 17.096668 samples/s, training: accuracy=0.789062, loss=0.307534
+INFO:root:[Epoch 12 Batch 2] speed: 17.104636 samples/s, training: accuracy=0.786458, loss=0.304675
+INFO:root:[Epoch 12 Batch 3] speed: 17.165331 samples/s, training: accuracy=0.802734, loss=0.317438
+INFO:root:[Epoch 12 Batch 4] speed: 17.150013 samples/s, training: accuracy=0.800000, loss=0.320029
+INFO:root:[Epoch 12 Batch 5] speed: 16.851083 samples/s, training: accuracy=0.813802, loss=0.328577
+INFO:root:[Epoch 12 Batch 6] speed: 17.013086 samples/s, training: accuracy=0.808036, loss=0.333030
+INFO:root:[Epoch 12 Batch 7] speed: 16.614379 samples/s, training: accuracy=0.804688, loss=0.334281
+INFO:root:[Epoch 12 Batch 8] speed: 16.852634 samples/s, training: accuracy=0.798611, loss=0.334929
+INFO:root:[Epoch 12 Batch 9] speed: 16.907225 samples/s, training: accuracy=0.800000, loss=0.335291
+INFO:root:[Epoch 12] training: accuracy=0.800000, loss=0.335291
+INFO:root:[Epoch 12] time cost: 74.909280
+(['accuracy', 'loss'], [0.8151041666666666, 0.47998373707135517])
+INFO:root:[Epoch 12] validation: accuracy=0.815104, loss=0.479984
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 13 Batch 0] speed: 18.723647 samples/s, training: accuracy=0.789062, loss=0.325062
+INFO:root:[Epoch 13 Batch 1] speed: 16.988587 samples/s, training: accuracy=0.816406, loss=0.320203
+INFO:root:[Epoch 13 Batch 2] speed: 16.782278 samples/s, training: accuracy=0.815104, loss=0.323393
+INFO:root:[Epoch 13 Batch 3] speed: 17.241358 samples/s, training: accuracy=0.806641, loss=0.321109
+INFO:root:[Epoch 13 Batch 4] speed: 17.133416 samples/s, training: accuracy=0.812500, loss=0.323607
+INFO:root:[Epoch 13 Batch 5] speed: 16.889351 samples/s, training: accuracy=0.816406, loss=0.324191
+INFO:root:[Epoch 13 Batch 6] speed: 17.231503 samples/s, training: accuracy=0.816964, loss=0.324464
+INFO:root:[Epoch 13 Batch 7] speed: 17.125604 samples/s, training: accuracy=0.817383, loss=0.324903
+INFO:root:[Epoch 13 Batch 8] speed: 17.158087 samples/s, training: accuracy=0.816840, loss=0.325971
+INFO:root:[Epoch 13 Batch 9] speed: 17.160052 samples/s, training: accuracy=0.821875, loss=0.323310
+INFO:root:[Epoch 13] training: accuracy=0.821875, loss=0.323310
+INFO:root:[Epoch 13] time cost: 74.701786
+(['accuracy', 'loss'], [0.8671875, 0.27021308243274689])
+INFO:root:[Epoch 13] validation: accuracy=0.867188, loss=0.270213
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 14 Batch 0] speed: 18.973475 samples/s, training: accuracy=0.875000, loss=0.309340
+INFO:root:[Epoch 14 Batch 1] speed: 16.898040 samples/s, training: accuracy=0.886719, loss=0.307209
+INFO:root:[Epoch 14 Batch 2] speed: 17.256677 samples/s, training: accuracy=0.851562, loss=0.306727
+INFO:root:[Epoch 14 Batch 3] speed: 17.126589 samples/s, training: accuracy=0.855469, loss=0.308268
+INFO:root:[Epoch 14 Batch 4] speed: 16.975934 samples/s, training: accuracy=0.853125, loss=0.307637
+INFO:root:[Epoch 14 Batch 5] speed: 16.787297 samples/s, training: accuracy=0.859375, loss=0.310355
+INFO:root:[Epoch 14 Batch 6] speed: 17.098484 samples/s, training: accuracy=0.851562, loss=0.311868
+INFO:root:[Epoch 14 Batch 7] speed: 17.198651 samples/s, training: accuracy=0.852539, loss=0.312890
+INFO:root:[Epoch 14 Batch 8] speed: 17.176638 samples/s, training: accuracy=0.849826, loss=0.313294
+INFO:root:[Epoch 14 Batch 9] speed: 17.280946 samples/s, training: accuracy=0.853906, loss=0.313559
+INFO:root:[Epoch 14] training: accuracy=0.853906, loss=0.313559
+INFO:root:[Epoch 14] time cost: 74.550284
+(['accuracy', 'loss'], [0.8020833333333334, 0.33888179063796997])
+INFO:root:[Epoch 14] validation: accuracy=0.802083, loss=0.338882
+INFO:root:[Epoch 15 Batch 0] speed: 19.106825 samples/s, training: accuracy=0.890625, loss=0.316912
+INFO:root:[Epoch 15 Batch 1] speed: 17.309042 samples/s, training: accuracy=0.867188, loss=0.305818
+INFO:root:[Epoch 15 Batch 2] speed: 17.300907 samples/s, training: accuracy=0.864583, loss=0.305791
+INFO:root:[Epoch 15 Batch 3] speed: 17.346228 samples/s, training: accuracy=0.863281, loss=0.304991
+INFO:root:[Epoch 15 Batch 4] speed: 17.281034 samples/s, training: accuracy=0.862500, loss=0.302656
+INFO:root:[Epoch 15 Batch 5] speed: 17.302401 samples/s, training: accuracy=0.869792, loss=0.301874
+INFO:root:[Epoch 15 Batch 6] speed: 17.248603 samples/s, training: accuracy=0.867188, loss=0.300614
+INFO:root:[Epoch 15 Batch 7] speed: 17.150693 samples/s, training: accuracy=0.854492, loss=0.301494
+INFO:root:[Epoch 15 Batch 8] speed: 17.256749 samples/s, training: accuracy=0.858507, loss=0.299325
+INFO:root:[Epoch 15 Batch 9] speed: 17.020416 samples/s, training: accuracy=0.857812, loss=0.297583
+INFO:root:[Epoch 15] training: accuracy=0.857812, loss=0.297583
+INFO:root:[Epoch 15] time cost: 73.884374
+(['accuracy', 'loss'], [0.76171875, 0.13583929836750031])
+INFO:root:[Epoch 15] validation: accuracy=0.761719, loss=0.135839
+INFO:root:[Epoch 16 Batch 0] speed: 19.154158 samples/s, training: accuracy=0.875000, loss=0.264513
+INFO:root:[Epoch 16 Batch 1] speed: 16.872031 samples/s, training: accuracy=0.863281, loss=0.269192
+INFO:root:[Epoch 16 Batch 2] speed: 16.782943 samples/s, training: accuracy=0.877604, loss=0.263803
+INFO:root:[Epoch 16 Batch 3] speed: 17.010548 samples/s, training: accuracy=0.880859, loss=0.266872
+INFO:root:[Epoch 16 Batch 4] speed: 17.260197 samples/s, training: accuracy=0.868750, loss=0.267709
+INFO:root:[Epoch 16 Batch 5] speed: 16.773163 samples/s, training: accuracy=0.871094, loss=0.271986
+INFO:root:[Epoch 16 Batch 6] speed: 17.041976 samples/s, training: accuracy=0.878348, loss=0.275312
+INFO:root:[Epoch 16 Batch 7] speed: 17.154431 samples/s, training: accuracy=0.872070, loss=0.276224
+INFO:root:[Epoch 16 Batch 8] speed: 16.776502 samples/s, training: accuracy=0.879340, loss=0.278122
+INFO:root:[Epoch 16 Batch 9] speed: 17.245170 samples/s, training: accuracy=0.872656, loss=0.279594
+INFO:root:[Epoch 16] training: accuracy=0.872656, loss=0.279594
+INFO:root:[Epoch 16] time cost: 74.878689
+(['accuracy', 'loss'], [0.8723958333333334, 0.21412146588166556])
+INFO:root:[Epoch 16] validation: accuracy=0.872396, loss=0.214121
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 17 Batch 0] speed: 19.084345 samples/s, training: accuracy=0.843750, loss=0.318253
+INFO:root:[Epoch 17 Batch 1] speed: 17.245967 samples/s, training: accuracy=0.820312, loss=0.305570
+INFO:root:[Epoch 17 Batch 2] speed: 17.299993 samples/s, training: accuracy=0.848958, loss=0.300032
+INFO:root:[Epoch 17 Batch 3] speed: 16.986369 samples/s, training: accuracy=0.857422, loss=0.298752
+INFO:root:[Epoch 17 Batch 4] speed: 17.086154 samples/s, training: accuracy=0.864062, loss=0.294837
+INFO:root:[Epoch 17 Batch 5] speed: 17.153702 samples/s, training: accuracy=0.869792, loss=0.292651
+INFO:root:[Epoch 17 Batch 6] speed: 17.335860 samples/s, training: accuracy=0.869420, loss=0.292474
+INFO:root:[Epoch 17 Batch 7] speed: 17.218289 samples/s, training: accuracy=0.864258, loss=0.290669
+INFO:root:[Epoch 17 Batch 8] speed: 16.981927 samples/s, training: accuracy=0.862847, loss=0.290133
+INFO:root:[Epoch 17 Batch 9] speed: 17.271360 samples/s, training: accuracy=0.864062, loss=0.288396
+INFO:root:[Epoch 17] training: accuracy=0.864062, loss=0.288396
+INFO:root:[Epoch 17] time cost: 74.170320
+(['accuracy', 'loss'], [0.8255208333333334, 0.26875754694143933])
+INFO:root:[Epoch 17] validation: accuracy=0.825521, loss=0.268758
+INFO:root:[Epoch 18 Batch 0] speed: 18.994333 samples/s, training: accuracy=0.882812, loss=0.291137
+INFO:root:[Epoch 18 Batch 1] speed: 17.138855 samples/s, training: accuracy=0.843750, loss=0.289265
+INFO:root:[Epoch 18 Batch 2] speed: 17.127605 samples/s, training: accuracy=0.854167, loss=0.287275
+INFO:root:[Epoch 18 Batch 3] speed: 16.953640 samples/s, training: accuracy=0.859375, loss=0.284743
+INFO:root:[Epoch 18 Batch 4] speed: 16.719171 samples/s, training: accuracy=0.865625, loss=0.286863
+INFO:root:[Epoch 18 Batch 5] speed: 17.157024 samples/s, training: accuracy=0.865885, loss=0.289026
+INFO:root:[Epoch 18 Batch 6] speed: 17.134155 samples/s, training: accuracy=0.872768, loss=0.288778
+INFO:root:[Epoch 18 Batch 7] speed: 17.062178 samples/s, training: accuracy=0.875000, loss=0.292219
+INFO:root:[Epoch 18 Batch 8] speed: 17.242048 samples/s, training: accuracy=0.875000, loss=0.294972
+INFO:root:[Epoch 18 Batch 9] speed: 17.188127 samples/s, training: accuracy=0.874219, loss=0.294253
+INFO:root:[Epoch 18] training: accuracy=0.874219, loss=0.294253
+INFO:root:[Epoch 18] time cost: 74.574507
+(['accuracy', 'loss'], [0.87109375, 0.29786460101604462])
+INFO:root:[Epoch 18] validation: accuracy=0.871094, loss=0.297865
+INFO:root:[Epoch 19 Batch 0] speed: 19.081537 samples/s, training: accuracy=0.914062, loss=0.275377
+INFO:root:[Epoch 19 Batch 1] speed: 16.619270 samples/s, training: accuracy=0.894531, loss=0.269510
+INFO:root:[Epoch 19 Batch 2] speed: 16.481363 samples/s, training: accuracy=0.893229, loss=0.264862
+INFO:root:[Epoch 19 Batch 3] speed: 16.406462 samples/s, training: accuracy=0.896484, loss=0.267321
+INFO:root:[Epoch 19 Batch 4] speed: 17.147208 samples/s, training: accuracy=0.900000, loss=0.269884
+INFO:root:[Epoch 19 Batch 5] speed: 16.967032 samples/s, training: accuracy=0.893229, loss=0.273419
+INFO:root:[Epoch 19 Batch 6] speed: 16.905351 samples/s, training: accuracy=0.887277, loss=0.276545
+INFO:root:[Epoch 19 Batch 7] speed: 17.069946 samples/s, training: accuracy=0.887695, loss=0.281370
+INFO:root:[Epoch 19 Batch 8] speed: 17.006678 samples/s, training: accuracy=0.889757, loss=0.285080
+INFO:root:[Epoch 19 Batch 9] speed: 16.937217 samples/s, training: accuracy=0.886719, loss=0.288399
+INFO:root:[Epoch 19] training: accuracy=0.886719, loss=0.288399
+INFO:root:[Epoch 19] time cost: 75.527964
+(['accuracy', 'loss'], [0.8776041666666666, 0.18314318855603537])
+INFO:root:[Epoch 19] validation: accuracy=0.877604, loss=0.183143
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 20 Batch 0] speed: 18.991887 samples/s, training: accuracy=0.890625, loss=0.321985
+INFO:root:[Epoch 20 Batch 1] speed: 17.224938 samples/s, training: accuracy=0.863281, loss=0.322823
+INFO:root:[Epoch 20 Batch 2] speed: 17.078144 samples/s, training: accuracy=0.872396, loss=0.319927
+INFO:root:[Epoch 20 Batch 3] speed: 17.165932 samples/s, training: accuracy=0.880859, loss=0.321320
+INFO:root:[Epoch 20 Batch 4] speed: 17.115183 samples/s, training: accuracy=0.878125, loss=0.323183
+INFO:root:[Epoch 20 Batch 5] speed: 16.991388 samples/s, training: accuracy=0.877604, loss=0.323511
+INFO:root:[Epoch 20 Batch 6] speed: 17.165983 samples/s, training: accuracy=0.879464, loss=0.324600
+INFO:root:[Epoch 20 Batch 7] speed: 17.186352 samples/s, training: accuracy=0.881836, loss=0.324165
+INFO:root:[Epoch 20 Batch 8] speed: 17.191537 samples/s, training: accuracy=0.882812, loss=0.322410
+INFO:root:[Epoch 20 Batch 9] speed: 17.232879 samples/s, training: accuracy=0.885156, loss=0.320363
+INFO:root:[Epoch 20] training: accuracy=0.885156, loss=0.320363
+INFO:root:[Epoch 20] time cost: 74.304384
+(['accuracy', 'loss'], [0.8776041666666666, 0.23622515797615051])
+INFO:root:[Epoch 20] validation: accuracy=0.877604, loss=0.236225
+INFO:root:[Epoch 21 Batch 0] speed: 18.886756 samples/s, training: accuracy=0.882812, loss=0.305689
+INFO:root:[Epoch 21 Batch 1] speed: 17.043311 samples/s, training: accuracy=0.894531, loss=0.305330
+INFO:root:[Epoch 21 Batch 2] speed: 17.162518 samples/s, training: accuracy=0.890625, loss=0.300165
+INFO:root:[Epoch 21 Batch 3] speed: 16.996749 samples/s, training: accuracy=0.876953, loss=0.295882
+INFO:root:[Epoch 21 Batch 4] speed: 17.095104 samples/s, training: accuracy=0.881250, loss=0.295683
+INFO:root:[Epoch 21 Batch 5] speed: 17.213026 samples/s, training: accuracy=0.878906, loss=0.299163
+INFO:root:[Epoch 21 Batch 6] speed: 17.212503 samples/s, training: accuracy=0.885045, loss=0.301857
+INFO:root:[Epoch 21 Batch 7] speed: 17.205293 samples/s, training: accuracy=0.882812, loss=0.302626
+INFO:root:[Epoch 21 Batch 8] speed: 17.212456 samples/s, training: accuracy=0.881076, loss=0.303718
+INFO:root:[Epoch 21 Batch 9] speed: 17.019231 samples/s, training: accuracy=0.884375, loss=0.303448
+INFO:root:[Epoch 21] training: accuracy=0.884375, loss=0.303448
+INFO:root:[Epoch 21] time cost: 74.419666
+(['accuracy', 'loss'], [0.8671875, 0.23524865508079529])
+INFO:root:[Epoch 21] validation: accuracy=0.867188, loss=0.235249
+INFO:root:[Epoch 22 Batch 0] speed: 19.175975 samples/s, training: accuracy=0.914062, loss=0.298378
+INFO:root:[Epoch 22 Batch 1] speed: 17.279520 samples/s, training: accuracy=0.914062, loss=0.304200
+INFO:root:[Epoch 22 Batch 2] speed: 17.340118 samples/s, training: accuracy=0.914062, loss=0.303449
+INFO:root:[Epoch 22 Batch 3] speed: 17.187352 samples/s, training: accuracy=0.902344, loss=0.302680
+INFO:root:[Epoch 22 Batch 4] speed: 17.198436 samples/s, training: accuracy=0.898438, loss=0.301772
+INFO:root:[Epoch 22 Batch 5] speed: 17.358199 samples/s, training: accuracy=0.899740, loss=0.305483
+INFO:root:[Epoch 22 Batch 6] speed: 17.257184 samples/s, training: accuracy=0.902902, loss=0.306906
+INFO:root:[Epoch 22 Batch 7] speed: 17.089667 samples/s, training: accuracy=0.901367, loss=0.309393
+INFO:root:[Epoch 22 Batch 8] speed: 17.298690 samples/s, training: accuracy=0.898438, loss=0.309387
+INFO:root:[Epoch 22 Batch 9] speed: 17.103403 samples/s, training: accuracy=0.895312, loss=0.309357
+INFO:root:[Epoch 22] training: accuracy=0.895312, loss=0.309357
+INFO:root:[Epoch 22] time cost: 73.903053
+(['accuracy', 'loss'], [0.8359375, 0.23088553051153818])
+INFO:root:[Epoch 22] validation: accuracy=0.835938, loss=0.230886
+INFO:root:[Epoch 23 Batch 0] speed: 18.948181 samples/s, training: accuracy=0.921875, loss=0.294555
+INFO:root:[Epoch 23 Batch 1] speed: 17.266046 samples/s, training: accuracy=0.902344, loss=0.290810
+INFO:root:[Epoch 23 Batch 2] speed: 17.245593 samples/s, training: accuracy=0.882812, loss=0.291238
+INFO:root:[Epoch 23 Batch 3] speed: 17.188644 samples/s, training: accuracy=0.880859, loss=0.290875
+INFO:root:[Epoch 23 Batch 4] speed: 17.157940 samples/s, training: accuracy=0.887500, loss=0.293924
+INFO:root:[Epoch 23 Batch 5] speed: 17.232589 samples/s, training: accuracy=0.891927, loss=0.298897
+INFO:root:[Epoch 23 Batch 6] speed: 17.324642 samples/s, training: accuracy=0.891741, loss=0.304291
+INFO:root:[Epoch 23 Batch 7] speed: 15.805455 samples/s, training: accuracy=0.886719, loss=0.310295
+INFO:root:[Epoch 23 Batch 8] speed: 17.149021 samples/s, training: accuracy=0.888021, loss=0.314155
+INFO:root:[Epoch 23 Batch 9] speed: 17.279383 samples/s, training: accuracy=0.886719, loss=0.312220
+INFO:root:[Epoch 23] training: accuracy=0.886719, loss=0.312220
+INFO:root:[Epoch 23] time cost: 74.672804
+(['accuracy', 'loss'], [0.8359375, 0.18974547833204269])
+INFO:root:[Epoch 23] validation: accuracy=0.835938, loss=0.189745
+INFO:root:[Epoch 24 Batch 0] speed: 19.088589 samples/s, training: accuracy=0.906250, loss=0.309622
+INFO:root:[Epoch 24 Batch 1] speed: 17.241077 samples/s, training: accuracy=0.878906, loss=0.300303
+INFO:root:[Epoch 24 Batch 2] speed: 17.206209 samples/s, training: accuracy=0.875000, loss=0.292819
+INFO:root:[Epoch 24 Batch 3] speed: 17.204090 samples/s, training: accuracy=0.884766, loss=0.290293
+INFO:root:[Epoch 24 Batch 4] speed: 17.033692 samples/s, training: accuracy=0.884375, loss=0.287887
+INFO:root:[Epoch 24 Batch 5] speed: 17.097513 samples/s, training: accuracy=0.888021, loss=0.286972
+INFO:root:[Epoch 24 Batch 6] speed: 17.104132 samples/s, training: accuracy=0.888393, loss=0.287233
+INFO:root:[Epoch 24 Batch 7] speed: 17.070120 samples/s, training: accuracy=0.889648, loss=0.286469
+INFO:root:[Epoch 24 Batch 8] speed: 16.780497 samples/s, training: accuracy=0.888889, loss=0.289163
+INFO:root:[Epoch 24] training: accuracy=0.888889, loss=0.289163
+INFO:root:[Epoch 24] time cost: 67.009969
+(['accuracy', 'loss'], [0.8723958333333334, 0.10104786728819211])
+INFO:root:[Epoch 24] validation: accuracy=0.872396, loss=0.101048
+INFO:root:[Epoch 25 Batch 0] speed: 18.952886 samples/s, training: accuracy=0.890625, loss=0.305073
+INFO:root:[Epoch 25 Batch 1] speed: 17.152951 samples/s, training: accuracy=0.898438, loss=0.296429
+INFO:root:[Epoch 25 Batch 2] speed: 17.145144 samples/s, training: accuracy=0.898438, loss=0.296132
+INFO:root:[Epoch 25 Batch 3] speed: 17.151907 samples/s, training: accuracy=0.904297, loss=0.297107
+INFO:root:[Epoch 25 Batch 4] speed: 17.256916 samples/s, training: accuracy=0.895312, loss=0.296113
+INFO:root:[Epoch 25 Batch 5] speed: 17.138039 samples/s, training: accuracy=0.899740, loss=0.299236
+INFO:root:[Epoch 25 Batch 6] speed: 17.211435 samples/s, training: accuracy=0.890625, loss=0.301185
+INFO:root:[Epoch 25 Batch 7] speed: 17.213567 samples/s, training: accuracy=0.893555, loss=0.303007
+INFO:root:[Epoch 25 Batch 8] speed: 17.222113 samples/s, training: accuracy=0.891493, loss=0.304224
+INFO:root:[Epoch 25 Batch 9] speed: 17.154429 samples/s, training: accuracy=0.897656, loss=0.305906
+INFO:root:[Epoch 25] training: accuracy=0.897656, loss=0.305906
+INFO:root:[Epoch 25] time cost: 74.184253
+(['accuracy', 'loss'], [0.8697916666666666, 0.34166884422302246])
+INFO:root:[Epoch 25] validation: accuracy=0.869792, loss=0.341669
+INFO:root:[Epoch 26 Batch 0] speed: 19.040207 samples/s, training: accuracy=0.921875, loss=0.305618
+INFO:root:[Epoch 26 Batch 1] speed: 17.277060 samples/s, training: accuracy=0.933594, loss=0.305857
+INFO:root:[Epoch 26 Batch 2] speed: 17.183835 samples/s, training: accuracy=0.919271, loss=0.308939
+INFO:root:[Epoch 26 Batch 3] speed: 17.263787 samples/s, training: accuracy=0.929688, loss=0.310317
+INFO:root:[Epoch 26 Batch 4] speed: 17.245871 samples/s, training: accuracy=0.925000, loss=0.313071
+INFO:root:[Epoch 26 Batch 5] speed: 17.086083 samples/s, training: accuracy=0.916667, loss=0.316391
+INFO:root:[Epoch 26 Batch 6] speed: 17.118657 samples/s, training: accuracy=0.911830, loss=0.315857
+INFO:root:[Epoch 26 Batch 7] speed: 17.175345 samples/s, training: accuracy=0.908203, loss=0.317752
+INFO:root:[Epoch 26 Batch 8] speed: 17.012463 samples/s, training: accuracy=0.907986, loss=0.319053
+INFO:root:[Epoch 26 Batch 9] speed: 17.257872 samples/s, training: accuracy=0.910937, loss=0.320708
+INFO:root:[Epoch 26] training: accuracy=0.910937, loss=0.320708
+INFO:root:[Epoch 26] time cost: 74.167870
+(['accuracy', 'loss'], [0.80859375, 0.022986609488725662])
+INFO:root:[Epoch 26] validation: accuracy=0.808594, loss=0.022987
+INFO:root:[Epoch 27 Batch 0] speed: 19.180452 samples/s, training: accuracy=0.898438, loss=0.336268
+INFO:root:[Epoch 27 Batch 1] speed: 17.241690 samples/s, training: accuracy=0.921875, loss=0.334124
+INFO:root:[Epoch 27 Batch 2] speed: 17.178568 samples/s, training: accuracy=0.908854, loss=0.324842
+INFO:root:[Epoch 27 Batch 3] speed: 17.182945 samples/s, training: accuracy=0.900391, loss=0.319025
+INFO:root:[Epoch 27 Batch 4] speed: 17.170415 samples/s, training: accuracy=0.904687, loss=0.309815
+INFO:root:[Epoch 27 Batch 5] speed: 17.125948 samples/s, training: accuracy=0.903646, loss=0.303494
+INFO:root:[Epoch 27 Batch 6] speed: 17.246576 samples/s, training: accuracy=0.907366, loss=0.296559
+INFO:root:[Epoch 27 Batch 7] speed: 17.255606 samples/s, training: accuracy=0.909180, loss=0.292193
+INFO:root:[Epoch 27 Batch 8] speed: 17.263517 samples/s, training: accuracy=0.908854, loss=0.289067
+INFO:root:[Epoch 27 Batch 9] speed: 17.134109 samples/s, training: accuracy=0.906250, loss=0.284508
+INFO:root:[Epoch 27] training: accuracy=0.906250, loss=0.284508
+INFO:root:[Epoch 27] time cost: 74.039804
+(['accuracy', 'loss'], [0.8463541666666666, 0.26452380915482837])
+INFO:root:[Epoch 27] validation: accuracy=0.846354, loss=0.264524
+INFO:root:[Epoch 28 Batch 0] speed: 19.076436 samples/s, training: accuracy=0.914062, loss=0.239447
+INFO:root:[Epoch 28 Batch 1] speed: 17.328360 samples/s, training: accuracy=0.914062, loss=0.225504
+INFO:root:[Epoch 28 Batch 2] speed: 17.144677 samples/s, training: accuracy=0.901042, loss=0.222163
+INFO:root:[Epoch 28 Batch 3] speed: 17.012553 samples/s, training: accuracy=0.908203, loss=0.224478
+INFO:root:[Epoch 28 Batch 4] speed: 17.147282 samples/s, training: accuracy=0.896875, loss=0.227746
+INFO:root:[Epoch 28 Batch 5] speed: 17.252490 samples/s, training: accuracy=0.899740, loss=0.234317
+INFO:root:[Epoch 28 Batch 6] speed: 17.219797 samples/s, training: accuracy=0.900670, loss=0.240316
+INFO:root:[Epoch 28 Batch 7] speed: 17.235685 samples/s, training: accuracy=0.900391, loss=0.245104
+INFO:root:[Epoch 28 Batch 8] speed: 17.234675 samples/s, training: accuracy=0.901910, loss=0.248146
+INFO:root:[Epoch 28 Batch 9] speed: 17.037612 samples/s, training: accuracy=0.902344, loss=0.249430
+INFO:root:[Epoch 28] training: accuracy=0.902344, loss=0.249430
+INFO:root:[Epoch 28] time cost: 74.156071
+(['accuracy', 'loss'], [0.8828125, 0.28840103000402451])
+INFO:root:[Epoch 28] validation: accuracy=0.882812, loss=0.288401
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 29 Batch 0] speed: 19.022590 samples/s, training: accuracy=0.929688, loss=0.259171
+INFO:root:[Epoch 29 Batch 1] speed: 17.061930 samples/s, training: accuracy=0.921875, loss=0.261928
+INFO:root:[Epoch 29 Batch 2] speed: 17.093130 samples/s, training: accuracy=0.921875, loss=0.265925
+INFO:root:[Epoch 29 Batch 3] speed: 17.263722 samples/s, training: accuracy=0.912109, loss=0.268672
+INFO:root:[Epoch 29 Batch 4] speed: 17.236717 samples/s, training: accuracy=0.901563, loss=0.267782
+INFO:root:[Epoch 29 Batch 5] speed: 17.194641 samples/s, training: accuracy=0.907552, loss=0.271612
+INFO:root:[Epoch 29 Batch 6] speed: 16.857987 samples/s, training: accuracy=0.906250, loss=0.272826
+INFO:root:[Epoch 29 Batch 7] speed: 16.926719 samples/s, training: accuracy=0.905273, loss=0.273832
+INFO:root:[Epoch 29 Batch 8] speed: 17.227051 samples/s, training: accuracy=0.904514, loss=0.275126
+INFO:root:[Epoch 29 Batch 9] speed: 17.185547 samples/s, training: accuracy=0.907813, loss=0.276756
+INFO:root:[Epoch 29] training: accuracy=0.907813, loss=0.276756
+INFO:root:[Epoch 29] time cost: 74.422606
+(['accuracy', 'loss'], [0.8776041666666666, 0.23186384638150534])
+INFO:root:[Epoch 29] validation: accuracy=0.877604, loss=0.231864
+INFO:root:[Epoch 30 Batch 0] speed: 19.210928 samples/s, training: accuracy=0.929688, loss=0.305445
+INFO:root:[Epoch 30 Batch 1] speed: 17.252199 samples/s, training: accuracy=0.914062, loss=0.305778
+INFO:root:[Epoch 30 Batch 2] speed: 17.227843 samples/s, training: accuracy=0.914062, loss=0.304436
+INFO:root:[Epoch 30 Batch 3] speed: 17.244111 samples/s, training: accuracy=0.919922, loss=0.306430
+INFO:root:[Epoch 30 Batch 4] speed: 16.921661 samples/s, training: accuracy=0.926562, loss=0.309575
+INFO:root:[Epoch 30 Batch 5] speed: 17.207012 samples/s, training: accuracy=0.911458, loss=0.308864
+INFO:root:[Epoch 30 Batch 6] speed: 17.079983 samples/s, training: accuracy=0.904018, loss=0.307855
+INFO:root:[Epoch 30 Batch 7] speed: 17.091552 samples/s, training: accuracy=0.904297, loss=0.305523
+INFO:root:[Epoch 30 Batch 8] speed: 17.142271 samples/s, training: accuracy=0.910590, loss=0.304598
+INFO:root:[Epoch 30 Batch 9] speed: 17.265622 samples/s, training: accuracy=0.906250, loss=0.304514
+INFO:root:[Epoch 30] training: accuracy=0.906250, loss=0.304514
+INFO:root:[Epoch 30] time cost: 74.192028
+(['accuracy', 'loss'], [0.8619791666666666, 0.17136282225449881])
+INFO:root:[Epoch 30] validation: accuracy=0.861979, loss=0.171363
+INFO:root:[Epoch 31 Batch 0] speed: 19.056325 samples/s, training: accuracy=0.914062, loss=0.293556
+INFO:root:[Epoch 31 Batch 1] speed: 17.212414 samples/s, training: accuracy=0.906250, loss=0.292477
+INFO:root:[Epoch 31 Batch 2] speed: 17.146652 samples/s, training: accuracy=0.908854, loss=0.292344
+INFO:root:[Epoch 31 Batch 3] speed: 16.985990 samples/s, training: accuracy=0.908203, loss=0.291576
+INFO:root:[Epoch 31 Batch 4] speed: 16.817505 samples/s, training: accuracy=0.914062, loss=0.290021
+INFO:root:[Epoch 31 Batch 5] speed: 17.238284 samples/s, training: accuracy=0.916667, loss=0.289020
+INFO:root:[Epoch 31 Batch 6] speed: 17.318670 samples/s, training: accuracy=0.915179, loss=0.290795
+INFO:root:[Epoch 31 Batch 7] speed: 16.958611 samples/s, training: accuracy=0.913086, loss=0.292510
+INFO:root:[Epoch 31 Batch 8] speed: 17.274381 samples/s, training: accuracy=0.914931, loss=0.294338
+INFO:root:[Epoch 31 Batch 9] speed: 16.970235 samples/s, training: accuracy=0.912500, loss=0.294186
+INFO:root:[Epoch 31] training: accuracy=0.912500, loss=0.294186
+INFO:root:[Epoch 31] time cost: 74.472057
+(['accuracy', 'loss'], [0.84765625, 0.23512366414070129])
+INFO:root:[Epoch 31] validation: accuracy=0.847656, loss=0.235124
+INFO:root:[Epoch 32 Batch 0] speed: 19.184244 samples/s, training: accuracy=0.875000, loss=0.297603
+INFO:root:[Epoch 32 Batch 1] speed: 17.135487 samples/s, training: accuracy=0.878906, loss=0.307508
+INFO:root:[Epoch 32 Batch 2] speed: 17.242188 samples/s, training: accuracy=0.903646, loss=0.310509
+INFO:root:[Epoch 32 Batch 3] speed: 17.218177 samples/s, training: accuracy=0.912109, loss=0.313160
+INFO:root:[Epoch 32 Batch 4] speed: 17.007144 samples/s, training: accuracy=0.907813, loss=0.320686
+INFO:root:[Epoch 32 Batch 5] speed: 17.226858 samples/s, training: accuracy=0.906250, loss=0.319507
+INFO:root:[Epoch 32 Batch 6] speed: 16.897875 samples/s, training: accuracy=0.905134, loss=0.320204
+INFO:root:[Epoch 32 Batch 7] speed: 17.246511 samples/s, training: accuracy=0.911133, loss=0.316857
+INFO:root:[Epoch 32 Batch 8] speed: 17.121426 samples/s, training: accuracy=0.912326, loss=0.313523
+INFO:root:[Epoch 32 Batch 9] speed: 17.055315 samples/s, training: accuracy=0.908594, loss=0.306008
+INFO:root:[Epoch 32] training: accuracy=0.908594, loss=0.306008
+INFO:root:[Epoch 32] time cost: 74.321446
+(['accuracy', 'loss'], [0.8697916666666666, 0.12599419802427292])
+INFO:root:[Epoch 32] validation: accuracy=0.869792, loss=0.125994
+INFO:root:[Epoch 33 Batch 0] speed: 19.194595 samples/s, training: accuracy=0.890625, loss=0.263489
+INFO:root:[Epoch 33 Batch 1] speed: 17.108205 samples/s, training: accuracy=0.921875, loss=0.269841
+INFO:root:[Epoch 33 Batch 2] speed: 17.237940 samples/s, training: accuracy=0.916667, loss=0.264935
+INFO:root:[Epoch 33 Batch 3] speed: 17.207120 samples/s, training: accuracy=0.904297, loss=0.266723
+INFO:root:[Epoch 33 Batch 4] speed: 17.101504 samples/s, training: accuracy=0.906250, loss=0.265354
+INFO:root:[Epoch 33 Batch 5] speed: 17.000160 samples/s, training: accuracy=0.914062, loss=0.262228
+INFO:root:[Epoch 33 Batch 6] speed: 17.296349 samples/s, training: accuracy=0.910714, loss=0.258219
+INFO:root:[Epoch 33 Batch 7] speed: 17.152544 samples/s, training: accuracy=0.912109, loss=0.254254
+INFO:root:[Epoch 33 Batch 8] speed: 17.245065 samples/s, training: accuracy=0.909722, loss=0.253560
+INFO:root:[Epoch 33 Batch 9] speed: 17.179363 samples/s, training: accuracy=0.910937, loss=0.253939
+INFO:root:[Epoch 33] training: accuracy=0.910937, loss=0.253939
+INFO:root:[Epoch 33] time cost: 74.155999
+(['accuracy', 'loss'], [0.875, 0.16014046967029572])
+INFO:root:[Epoch 33] validation: accuracy=0.875000, loss=0.160140
+INFO:root:[Epoch 34 Batch 0] speed: 19.033418 samples/s, training: accuracy=0.914062, loss=0.266298
+INFO:root:[Epoch 34 Batch 1] speed: 17.344804 samples/s, training: accuracy=0.910156, loss=0.258848
+INFO:root:[Epoch 34 Batch 2] speed: 17.155229 samples/s, training: accuracy=0.908854, loss=0.261622
+INFO:root:[Epoch 34 Batch 3] speed: 17.273209 samples/s, training: accuracy=0.921875, loss=0.261986
+INFO:root:[Epoch 34 Batch 4] speed: 17.055776 samples/s, training: accuracy=0.918750, loss=0.265364
+INFO:root:[Epoch 34 Batch 5] speed: 17.187305 samples/s, training: accuracy=0.917969, loss=0.264928
+INFO:root:[Epoch 34 Batch 6] speed: 17.232900 samples/s, training: accuracy=0.917411, loss=0.264635
+INFO:root:[Epoch 34 Batch 7] speed: 17.160581 samples/s, training: accuracy=0.918945, loss=0.263868
+INFO:root:[Epoch 34 Batch 8] speed: 17.007056 samples/s, training: accuracy=0.921875, loss=0.266053
+INFO:root:[Epoch 34 Batch 9] speed: 17.222107 samples/s, training: accuracy=0.923438, loss=0.267045
+INFO:root:[Epoch 34] training: accuracy=0.923438, loss=0.267045
+INFO:root:[Epoch 34] time cost: 74.163696
+(['accuracy', 'loss'], [0.890625, 0.19055488705635071])
+INFO:root:[Epoch 34] validation: accuracy=0.890625, loss=0.190555
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 35 Batch 0] speed: 19.159686 samples/s, training: accuracy=0.945312, loss=0.264511
+INFO:root:[Epoch 35 Batch 1] speed: 16.793742 samples/s, training: accuracy=0.945312, loss=0.265938
+INFO:root:[Epoch 35 Batch 2] speed: 16.879329 samples/s, training: accuracy=0.934896, loss=0.273857
+INFO:root:[Epoch 35 Batch 3] speed: 17.210744 samples/s, training: accuracy=0.931641, loss=0.278234
+INFO:root:[Epoch 35 Batch 4] speed: 17.237005 samples/s, training: accuracy=0.921875, loss=0.280803
+INFO:root:[Epoch 35 Batch 5] speed: 17.420986 samples/s, training: accuracy=0.917969, loss=0.281292
+INFO:root:[Epoch 35 Batch 6] speed: 17.527543 samples/s, training: accuracy=0.918527, loss=0.282340
+INFO:root:[Epoch 35 Batch 7] speed: 17.362126 samples/s, training: accuracy=0.913086, loss=0.281101
+INFO:root:[Epoch 35 Batch 8] speed: 17.315797 samples/s, training: accuracy=0.911458, loss=0.278052
+INFO:root:[Epoch 35 Batch 9] speed: 17.376265 samples/s, training: accuracy=0.910156, loss=0.275885
+INFO:root:[Epoch 35] training: accuracy=0.910156, loss=0.275885
+INFO:root:[Epoch 35] time cost: 73.904820
+(['accuracy', 'loss'], [0.8671875, 0.25215472777684528])
+INFO:root:[Epoch 35] validation: accuracy=0.867188, loss=0.252155
+INFO:root:[Epoch 36 Batch 0] speed: 18.904410 samples/s, training: accuracy=0.914062, loss=0.240234
+INFO:root:[Epoch 36 Batch 1] speed: 17.212252 samples/s, training: accuracy=0.910156, loss=0.238468
+INFO:root:[Epoch 36 Batch 2] speed: 17.247322 samples/s, training: accuracy=0.921875, loss=0.228786
+INFO:root:[Epoch 36 Batch 3] speed: 17.271665 samples/s, training: accuracy=0.916016, loss=0.226968
+INFO:root:[Epoch 36 Batch 4] speed: 17.140210 samples/s, training: accuracy=0.917188, loss=0.227673
+INFO:root:[Epoch 36 Batch 5] speed: 17.346592 samples/s, training: accuracy=0.921875, loss=0.228756
+INFO:root:[Epoch 36 Batch 6] speed: 17.182251 samples/s, training: accuracy=0.915179, loss=0.231761
+INFO:root:[Epoch 36 Batch 7] speed: 17.023735 samples/s, training: accuracy=0.907227, loss=0.235751
+INFO:root:[Epoch 36 Batch 8] speed: 17.267350 samples/s, training: accuracy=0.912326, loss=0.240344
+INFO:root:[Epoch 36 Batch 9] speed: 16.882096 samples/s, training: accuracy=0.913281, loss=0.243341
+INFO:root:[Epoch 36] training: accuracy=0.913281, loss=0.243341
+INFO:root:[Epoch 36] time cost: 74.241241
+(['accuracy', 'loss'], [0.86328125, 0.30540280044078827])
+INFO:root:[Epoch 36] validation: accuracy=0.863281, loss=0.305403
+INFO:root:[Epoch 37 Batch 0] speed: 19.066127 samples/s, training: accuracy=0.929688, loss=0.252017
+INFO:root:[Epoch 37 Batch 1] speed: 17.207127 samples/s, training: accuracy=0.898438, loss=0.259162
+INFO:root:[Epoch 37 Batch 2] speed: 17.162665 samples/s, training: accuracy=0.916667, loss=0.257876
+INFO:root:[Epoch 37 Batch 3] speed: 17.201781 samples/s, training: accuracy=0.921875, loss=0.259982
+INFO:root:[Epoch 37 Batch 4] speed: 17.138567 samples/s, training: accuracy=0.918750, loss=0.262295
+INFO:root:[Epoch 37 Batch 5] speed: 17.237047 samples/s, training: accuracy=0.920573, loss=0.262339
+INFO:root:[Epoch 37 Batch 6] speed: 16.655825 samples/s, training: accuracy=0.925223, loss=0.261664
+INFO:root:[Epoch 37 Batch 7] speed: 17.057453 samples/s, training: accuracy=0.925781, loss=0.259906
+INFO:root:[Epoch 37 Batch 8] speed: 17.208754 samples/s, training: accuracy=0.918403, loss=0.260705
+INFO:root:[Epoch 37] training: accuracy=0.918403, loss=0.260705
+INFO:root:[Epoch 37] time cost: 66.964588
+(['accuracy', 'loss'], [0.8411458333333334, 0.30508354306221008])
+INFO:root:[Epoch 37] validation: accuracy=0.841146, loss=0.305084
+INFO:root:[Epoch 38 Batch 0] speed: 18.951963 samples/s, training: accuracy=0.921875, loss=0.262519
+INFO:root:[Epoch 38 Batch 1] speed: 17.291995 samples/s, training: accuracy=0.933594, loss=0.276615
+INFO:root:[Epoch 38 Batch 2] speed: 17.183420 samples/s, training: accuracy=0.927083, loss=0.282580
+INFO:root:[Epoch 38 Batch 3] speed: 17.102160 samples/s, training: accuracy=0.927734, loss=0.292226
+INFO:root:[Epoch 38 Batch 4] speed: 17.008997 samples/s, training: accuracy=0.923438, loss=0.299164
+INFO:root:[Epoch 38 Batch 5] speed: 17.033392 samples/s, training: accuracy=0.916667, loss=0.299319
+INFO:root:[Epoch 38 Batch 6] speed: 17.176230 samples/s, training: accuracy=0.917411, loss=0.298462
+INFO:root:[Epoch 38 Batch 7] speed: 17.066179 samples/s, training: accuracy=0.922852, loss=0.296103
+INFO:root:[Epoch 38 Batch 8] speed: 17.137305 samples/s, training: accuracy=0.920139, loss=0.294069
+INFO:root:[Epoch 38 Batch 9] speed: 17.179986 samples/s, training: accuracy=0.921875, loss=0.290828
+INFO:root:[Epoch 38] training: accuracy=0.921875, loss=0.290828
+INFO:root:[Epoch 38] time cost: 74.388878
+(['accuracy', 'loss'], [0.84375, 0.11461122334003448])
+INFO:root:[Epoch 38] validation: accuracy=0.843750, loss=0.114611
+INFO:root:[Epoch 39 Batch 0] speed: 18.907666 samples/s, training: accuracy=0.937500, loss=0.257826
+INFO:root:[Epoch 39 Batch 1] speed: 16.996837 samples/s, training: accuracy=0.921875, loss=0.261415
+INFO:root:[Epoch 39 Batch 2] speed: 17.170274 samples/s, training: accuracy=0.914062, loss=0.264636
+INFO:root:[Epoch 39 Batch 3] speed: 17.212817 samples/s, training: accuracy=0.916016, loss=0.264242
+INFO:root:[Epoch 39 Batch 4] speed: 17.162871 samples/s, training: accuracy=0.912500, loss=0.264912
+INFO:root:[Epoch 39 Batch 5] speed: 17.198494 samples/s, training: accuracy=0.914062, loss=0.267031
+INFO:root:[Epoch 39 Batch 6] speed: 17.181203 samples/s, training: accuracy=0.916295, loss=0.266323
+INFO:root:[Epoch 39 Batch 7] speed: 17.026627 samples/s, training: accuracy=0.911133, loss=0.267103
+INFO:root:[Epoch 39 Batch 8] speed: 16.787077 samples/s, training: accuracy=0.915799, loss=0.267062
+INFO:root:[Epoch 39 Batch 9] speed: 17.147210 samples/s, training: accuracy=0.915625, loss=0.265865
+INFO:root:[Epoch 39] training: accuracy=0.915625, loss=0.265865
+INFO:root:[Epoch 39] time cost: 74.537479
+(['accuracy', 'loss'], [0.9010416666666666, 0.046601042151451111])
+INFO:root:[Epoch 39] validation: accuracy=0.901042, loss=0.046601
+INFO:root:Best validation f1 found. Checkpointing...
+INFO:root:[Epoch 40 Batch 0] speed: 19.030834 samples/s, training: accuracy=0.929688, loss=0.259724
+INFO:root:[Epoch 40 Batch 1] speed: 17.300306 samples/s, training: accuracy=0.937500, loss=0.260491
+INFO:root:[Epoch 40 Batch 2] speed: 17.117346 samples/s, training: accuracy=0.937500, loss=0.262306
+INFO:root:[Epoch 40 Batch 3] speed: 17.293962 samples/s, training: accuracy=0.947266, loss=0.256904
+INFO:root:[Epoch 40 Batch 4] speed: 17.297966 samples/s, training: accuracy=0.937500, loss=0.255794
+INFO:root:[Epoch 40 Batch 5] speed: 16.976769 samples/s, training: accuracy=0.934896, loss=0.252635
+INFO:root:[Epoch 40 Batch 6] speed: 16.493727 samples/s, training: accuracy=0.935268, loss=0.249866
+INFO:root:[Epoch 40 Batch 7] speed: 17.304388 samples/s, training: accuracy=0.935547, loss=0.248673
+INFO:root:[Epoch 40 Batch 8] speed: 16.900226 samples/s, training: accuracy=0.937500, loss=0.248062
+INFO:root:[Epoch 40 Batch 9] speed: 17.238788 samples/s, training: accuracy=0.939063, loss=0.247629
+INFO:root:[Epoch 40] training: accuracy=0.939063, loss=0.247629
+INFO:root:[Epoch 40] time cost: 74.488849
+(['accuracy', 'loss'], [0.8645833333333334, 0.21560584505399069])
+INFO:root:[Epoch 40] validation: accuracy=0.864583, loss=0.215606
+INFO:root:[Epoch 41 Batch 0] speed: 19.037531 samples/s, training: accuracy=0.945312, loss=0.234828
+INFO:root:[Epoch 41 Batch 1] speed: 17.236805 samples/s, training: accuracy=0.921875, loss=0.235705
+INFO:root:[Epoch 41 Batch 2] speed: 17.175279 samples/s, training: accuracy=0.929688, loss=0.235698
+INFO:root:[Epoch 41 Batch 3] speed: 16.183247 samples/s, training: accuracy=0.927734, loss=0.239312
+INFO:root:[Epoch 41 Batch 4] speed: 17.024315 samples/s, training: accuracy=0.926562, loss=0.236950
+INFO:root:[Epoch 41 Batch 5] speed: 17.186952 samples/s, training: accuracy=0.932292, loss=0.236005
+INFO:root:[Epoch 41 Batch 6] speed: 16.996487 samples/s, training: accuracy=0.937500, loss=0.238168
+INFO:root:[Epoch 41 Batch 7] speed: 17.073910 samples/s, training: accuracy=0.938477, loss=0.237517
+INFO:root:[Epoch 41 Batch 8] speed: 16.863164 samples/s, training: accuracy=0.940104, loss=0.241753
+INFO:root:[Epoch 41 Batch 9] speed: 16.782809 samples/s, training: accuracy=0.937500, loss=0.244857
+INFO:root:[Epoch 41] training: accuracy=0.937500, loss=0.244857
+INFO:root:[Epoch 41] time cost: 75.112648
+(['accuracy', 'loss'], [0.8828125, 0.2493259385228157])
+INFO:root:[Epoch 41] validation: accuracy=0.882812, loss=0.249326
+INFO:root:[Epoch 42 Batch 0] speed: 19.074292 samples/s, training: accuracy=0.945312, loss=0.287502
+INFO:root:[Epoch 42 Batch 1] speed: 16.859702 samples/s, training: accuracy=0.925781, loss=0.277693
+INFO:root:[Epoch 42 Batch 2] speed: 16.968302 samples/s, training: accuracy=0.927083, loss=0.266407
+INFO:root:[Epoch 42 Batch 3] speed: 17.061378 samples/s, training: accuracy=0.929688, loss=0.256251
+INFO:root:[Epoch 42 Batch 4] speed: 17.043742 samples/s, training: accuracy=0.934375, loss=0.249956
+INFO:root:[Epoch 42 Batch 5] speed: 17.257677 samples/s, training: accuracy=0.929688, loss=0.248617
+INFO:root:[Epoch 42 Batch 6] speed: 17.403503 samples/s, training: accuracy=0.927455, loss=0.247212
+INFO:root:[Epoch 42 Batch 7] speed: 17.494300 samples/s, training: accuracy=0.928711, loss=0.245312
+INFO:root:[Epoch 42 Batch 8] speed: 17.417454 samples/s, training: accuracy=0.930556, loss=0.245039
+INFO:root:[Epoch 42 Batch 9] speed: 17.449147 samples/s, training: accuracy=0.932031, loss=0.245090
+INFO:root:[Epoch 42] training: accuracy=0.932031, loss=0.245090
+INFO:root:[Epoch 42] time cost: 74.019350
+(['accuracy', 'loss'], [0.8645833333333334, 0.057518552290275693])
+INFO:root:[Epoch 42] validation: accuracy=0.864583, loss=0.057519
+INFO:root:[Epoch 43 Batch 0] speed: 19.366158 samples/s, training: accuracy=0.953125, loss=0.256377
+INFO:root:[Epoch 43 Batch 1] speed: 17.250075 samples/s, training: accuracy=0.957031, loss=0.260720
+INFO:root:[Epoch 43 Batch 2] speed: 17.450681 samples/s, training: accuracy=0.947917, loss=0.260276
+INFO:root:[Epoch 43 Batch 3] speed: 17.488604 samples/s, training: accuracy=0.947266, loss=0.259411
+INFO:root:[Epoch 43 Batch 4] speed: 17.220936 samples/s, training: accuracy=0.942187, loss=0.258168
+INFO:root:[Epoch 43 Batch 5] speed: 17.054726 samples/s, training: accuracy=0.942708, loss=0.259196
+INFO:root:[Epoch 43 Batch 6] speed: 17.432026 samples/s, training: accuracy=0.939732, loss=0.259868
+INFO:root:[Epoch 43 Batch 7] speed: 17.487830 samples/s, training: accuracy=0.935547, loss=0.257134
+INFO:root:[Epoch 43 Batch 8] speed: 17.457344 samples/s, training: accuracy=0.935764, loss=0.255594
+INFO:root:[Epoch 43 Batch 9] speed: 16.976053 samples/s, training: accuracy=0.934375, loss=0.255197
+INFO:root:[Epoch 43] training: accuracy=0.934375, loss=0.255197
+INFO:root:[Epoch 43] time cost: 73.545498
+(['accuracy', 'loss'], [0.8229166666666666, 0.17463280260562897])
+INFO:root:[Epoch 43] validation: accuracy=0.822917, loss=0.174633
+INFO:root:[Epoch 44 Batch 0] speed: 19.348505 samples/s, training: accuracy=0.882812, loss=0.260540
+INFO:root:[Epoch 44 Batch 1] speed: 17.199585 samples/s, training: accuracy=0.906250, loss=0.268776
+INFO:root:[Epoch 44 Batch 2] speed: 17.150041 samples/s, training: accuracy=0.924479, loss=0.271040
+INFO:root:[Epoch 44 Batch 3] speed: 17.225462 samples/s, training: accuracy=0.929688, loss=0.275359
+INFO:root:[Epoch 44 Batch 4] speed: 17.372874 samples/s, training: accuracy=0.934375, loss=0.278058
+INFO:root:[Epoch 44 Batch 5] speed: 17.369955 samples/s, training: accuracy=0.930990, loss=0.280287
+INFO:root:[Epoch 44 Batch 6] speed: 15.836224 samples/s, training: accuracy=0.929688, loss=0.281346
+INFO:root:[Epoch 44 Batch 7] speed: 17.077983 samples/s, training: accuracy=0.930664, loss=0.282834
+INFO:root:[Epoch 44 Batch 8] speed: 17.454877 samples/s, training: accuracy=0.928819, loss=0.281114
+INFO:root:[Epoch 44 Batch 9] speed: 17.440272 samples/s, training: accuracy=0.930469, loss=0.278465
+INFO:root:[Epoch 44] training: accuracy=0.930469, loss=0.278465
+INFO:root:[Epoch 44] time cost: 74.324339
+(['accuracy', 'loss'], [0.87109375, 0.094038909301161766])
+INFO:root:[Epoch 44] validation: accuracy=0.871094, loss=0.094039
+INFO:root:[Epoch 45 Batch 0] speed: 18.668839 samples/s, training: accuracy=0.953125, loss=0.280372
+INFO:root:[Epoch 45 Batch 1] speed: 17.402888 samples/s, training: accuracy=0.933594, loss=0.282425
+INFO:root:[Epoch 45 Batch 2] speed: 17.383893 samples/s, training: accuracy=0.932292, loss=0.285769
+INFO:root:[Epoch 45 Batch 3] speed: 15.275739 samples/s, training: accuracy=0.941406, loss=0.292995
+INFO:root:[Epoch 45 Batch 4] speed: 17.078970 samples/s, training: accuracy=0.928125, loss=0.296899
+INFO:root:[Epoch 45 Batch 5] speed: 17.451945 samples/s, training: accuracy=0.929688, loss=0.297645
+INFO:root:[Epoch 45 Batch 6] speed: 17.468691 samples/s, training: accuracy=0.934152, loss=0.295181
+INFO:root:[Epoch 45 Batch 7] speed: 17.471714 samples/s, training: accuracy=0.932617, loss=0.291593
+INFO:root:[Epoch 45 Batch 8] speed: 17.289820 samples/s, training: accuracy=0.931424, loss=0.287412
+INFO:root:[Epoch 45 Batch 9] speed: 17.403210 samples/s, training: accuracy=0.934375, loss=0.279587
+INFO:root:[Epoch 45] training: accuracy=0.934375, loss=0.279587
+INFO:root:[Epoch 45] time cost: 74.581712
+(['accuracy', 'loss'], [0.8802083333333334, 0.30454349517822266])
+INFO:root:[Epoch 45] validation: accuracy=0.880208, loss=0.304543
+INFO:root:[Epoch 46 Batch 0] speed: 19.312715 samples/s, training: accuracy=0.945312, loss=0.236761
+INFO:root:[Epoch 46 Batch 1] speed: 17.304329 samples/s, training: accuracy=0.933594, loss=0.240729
+INFO:root:[Epoch 46 Batch 2] speed: 17.324776 samples/s, training: accuracy=0.940104, loss=0.240815
+INFO:root:[Epoch 46 Batch 3] speed: 17.380843 samples/s, training: accuracy=0.935547, loss=0.244940
+INFO:root:[Epoch 46 Batch 4] speed: 17.346554 samples/s, training: accuracy=0.929688, loss=0.245600
+INFO:root:[Epoch 46 Batch 5] speed: 15.742337 samples/s, training: accuracy=0.930990, loss=0.245416
+INFO:root:[Epoch 46 Batch 6] speed: 17.420866 samples/s, training: accuracy=0.933036, loss=0.245978
+INFO:root:[Epoch 46 Batch 7] speed: 16.634591 samples/s, training: accuracy=0.932617, loss=0.245628
+INFO:root:[Epoch 46 Batch 8] speed: 16.665211 samples/s, training: accuracy=0.931424, loss=0.243954
+INFO:root:[Epoch 46 Batch 9] speed: 17.288821 samples/s, training: accuracy=0.931250, loss=0.244292
+INFO:root:[Epoch 46] training: accuracy=0.931250, loss=0.244292
+INFO:root:[Epoch 46] time cost: 74.800942
+(['accuracy', 'loss'], [0.890625, 0.15374226868152618])
+INFO:root:[Epoch 46] validation: accuracy=0.890625, loss=0.153742
+INFO:root:[Epoch 47 Batch 0] speed: 19.524714 samples/s, training: accuracy=0.945312, loss=0.263048
+INFO:root:[Epoch 47 Batch 1] speed: 17.453081 samples/s, training: accuracy=0.949219, loss=0.258687
+INFO:root:[Epoch 47 Batch 2] speed: 17.395197 samples/s, training: accuracy=0.953125, loss=0.259815
+INFO:root:[Epoch 47 Batch 3] speed: 17.441446 samples/s, training: accuracy=0.951172, loss=0.260462
+INFO:root:[Epoch 47 Batch 4] speed: 17.562983 samples/s, training: accuracy=0.946875, loss=0.264577
+INFO:root:[Epoch 47 Batch 5] speed: 17.581181 samples/s, training: accuracy=0.940104, loss=0.267020
+INFO:root:[Epoch 47 Batch 6] speed: 17.437255 samples/s, training: accuracy=0.943080, loss=0.266231
+INFO:root:[Epoch 47 Batch 7] speed: 17.497234 samples/s, training: accuracy=0.939453, loss=0.264631
+INFO:root:[Epoch 47 Batch 8] speed: 17.502105 samples/s, training: accuracy=0.940104, loss=0.264718
+INFO:root:[Epoch 47 Batch 9] speed: 17.270955 samples/s, training: accuracy=0.941406, loss=0.265732
+INFO:root:[Epoch 47] training: accuracy=0.941406, loss=0.265732
+INFO:root:[Epoch 47] time cost: 72.917874
+(['accuracy', 'loss'], [0.890625, 0.31843876838684082])
+INFO:root:[Epoch 47] validation: accuracy=0.890625, loss=0.318439
+INFO:root:[Epoch 48 Batch 0] speed: 18.954617 samples/s, training: accuracy=0.992188, loss=0.285304
+INFO:root:[Epoch 48 Batch 1] speed: 17.579300 samples/s, training: accuracy=0.949219, loss=0.291589
+INFO:root:[Epoch 48 Batch 2] speed: 17.378714 samples/s, training: accuracy=0.940104, loss=0.293912
+INFO:root:[Epoch 48 Batch 3] speed: 17.153415 samples/s, training: accuracy=0.921875, loss=0.291562
+INFO:root:[Epoch 48 Batch 4] speed: 17.456251 samples/s, training: accuracy=0.923438, loss=0.286068
+INFO:root:[Epoch 48 Batch 5] speed: 17.200974 samples/s, training: accuracy=0.925781, loss=0.278610
+INFO:root:[Epoch 48 Batch 6] speed: 17.506998 samples/s, training: accuracy=0.929688, loss=0.270564
+INFO:root:[Epoch 48 Batch 7] speed: 17.471693 samples/s, training: accuracy=0.927734, loss=0.263599
+INFO:root:[Epoch 48 Batch 8] speed: 17.536488 samples/s, training: accuracy=0.922743, loss=0.256761
+INFO:root:[Epoch 48 Batch 9] speed: 17.324682 samples/s, training: accuracy=0.923438, loss=0.252796
+INFO:root:[Epoch 48] training: accuracy=0.923438, loss=0.252796
+INFO:root:[Epoch 48] time cost: 73.338673
+(['accuracy', 'loss'], [0.890625, 0.32903826236724854])
+INFO:root:[Epoch 48] validation: accuracy=0.890625, loss=0.329038
+INFO:root:[Epoch 49 Batch 0] speed: 19.365657 samples/s, training: accuracy=0.867188, loss=0.209337
+INFO:root:[Epoch 49 Batch 1] speed: 17.242603 samples/s, training: accuracy=0.878906, loss=0.213092
+INFO:root:[Epoch 49 Batch 2] speed: 17.378242 samples/s, training: accuracy=0.893229, loss=0.221190
+INFO:root:[Epoch 49 Batch 3] speed: 17.468689 samples/s, training: accuracy=0.900391, loss=0.228568
+INFO:root:[Epoch 49 Batch 4] speed: 17.526199 samples/s, training: accuracy=0.906250, loss=0.232208
+INFO:root:[Epoch 49 Batch 5] speed: 17.303908 samples/s, training: accuracy=0.908854, loss=0.237572
+INFO:root:[Epoch 49 Batch 6] speed: 17.410894 samples/s, training: accuracy=0.907366, loss=0.238954
+INFO:root:[Epoch 49 Batch 7] speed: 17.390624 samples/s, training: accuracy=0.914062, loss=0.239465
+INFO:root:[Epoch 49 Batch 8] speed: 17.505708 samples/s, training: accuracy=0.910590, loss=0.240111
+INFO:root:[Epoch 49 Batch 9] speed: 17.443906 samples/s, training: accuracy=0.915625, loss=0.240137
+INFO:root:[Epoch 49] training: accuracy=0.915625, loss=0.240137
+INFO:root:[Epoch 49] time cost: 73.168259
+(['accuracy', 'loss'], [0.8828125, -0.10391518473625183])
+
