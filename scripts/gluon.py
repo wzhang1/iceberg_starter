@@ -141,7 +141,7 @@ def train(net, train_iter, val_iter, epochs, ctx):
 
         if val_accs[0] > best_ac:
             best_ac = val_accs[0]
-            logging.info('Best validation f1 found. Checkpointing...')
+            logging.info('Best validation found. Checkpointing...')
             net.save_params('net1-%d.params'%(epoch))
 
 if mode == 'hybrid':
