@@ -37,7 +37,7 @@ def predict_avg(url):
         return res;
 
 
-f = open('../input/test.lst', 'r')
+f = open('../input/test_list.lst', 'r')
 out = open('pred.csv' , 'w')
 out.write('id,is_iceberg\n')
 count = 0
